@@ -20,6 +20,7 @@ export function ApiProvider({ children }) {
    * Makes an API call and parses the response as JSON if possible.
    * Throws an error if anything goes wrong.
    */
+
   const request = async (resource, options) => {
     const response = await fetch(API + resource, {
       ...options,
