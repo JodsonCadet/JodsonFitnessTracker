@@ -1,8 +1,3 @@
-/**
- * PageContext manages which page the application is currently on.
- * The different routes are defined in <App>.
- */
-
 import { createContext, useContext, useState } from "react";
 
 const PageContext = createContext();
@@ -18,3 +13,5 @@ export function usePage() {
   if (!context) throw Error("usePage must be used within PageProvider");
   return context;
 }
+
+// Check

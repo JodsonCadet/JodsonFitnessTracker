@@ -1,10 +1,12 @@
 import { useAuth } from "../auth/AuthContext";
 import { usePage } from "./PageContext";
-
 /** Navbar with site navigation links */
+
 export default function Navbar() {
+
   const { token, logout } = useAuth();
   const { setPage } = usePage();
+  
   return (
     <header>
       <p>Fitness Trackr</p>
